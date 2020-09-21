@@ -71,13 +71,21 @@ h2{
 #logoNav{
     height: 50px;
     margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
+.navbar{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    float: left;
+    width: 100%;
+    box-shadow: 10px 5px 5px black
+}
 .linkNavBar a{
+    font-family: Chelsea;
     transition: 0.3s;
     border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .linkNavBar a:hover{
     background-color: var(--light);
@@ -85,10 +93,11 @@ h2{
     color: var(--primary) !important;
 }
 
-@media only screen and (max-width: 359px){
+@media only screen and (max-width: 372px){
     #logoNav{
         display: block;
         margin: 0 auto;
+        margin-top: 10px;
     }
 
     .linkNavBar{
@@ -97,11 +106,11 @@ h2{
     }
 
     #main{
-        height: calc(100vh - 106px) !important;
+        height: 100vh
     }
 
-    #main div{
-        height: calc(100vh - 106px) !important;
+    #main .mainBackground{
+        height: calc(100vh - 136px) !important;
     }
 }
 
@@ -109,19 +118,62 @@ h2{
     background: url("../images/animal1.png");
     background-size: 100px;
     background-repeat: no-repeat;
-    height: calc(100vh - 86px);
+    height: 100vh;
     background-size:cover;
     background-position: center center;
     display: vertical-align;
 }
 
-#main div{
-    height: calc(100vh - 86px);
+#main .mainBackground{
+    height: calc(100vh - 76px);
     display: table-cell;
     width: 100vw;
     vertical-align: middle;
 }
 
-h1{
-
+#main h1{
+    font-size: 60px;
 }
+
+#icon-scroll,
+#icon-scroll:before {
+    position: absolute;
+    left: 50%
+}
+#icon-scroll {
+    width: 30px !important;
+    height: 50px !important;
+    margin-left: -20px;
+    bottom: 10px;
+    margin-top: -35px;
+    border: 2px solid var(--primary);
+    pointer-events: none;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 25px;
+    background: var(--light);
+}
+
+#icon-scroll:before {
+    content: '';
+    width: 8px !important;
+    height: 8px !important;
+    background: var(--primary);
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll
+}
+@keyframes scroll {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(26px)
+    }
+}
+
+/* IGNORE EVERYTHING BELOW */
+
