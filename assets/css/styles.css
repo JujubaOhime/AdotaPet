@@ -84,8 +84,6 @@ h2{
     font-family: Chelsea;
     transition: 0.3s;
     border-radius: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 .linkNavBar a:hover{
     background-color: var(--light);
@@ -105,12 +103,16 @@ h2{
         justify-content: center;
     }
 
+    .linkNavBar a{
+        margin-top: 10px;
+    }
+
     #main{
         height: 100vh
     }
 
     #main .mainBackground{
-        height: calc(100vh - 136px) !important;
+        height: calc(100vh - 126px) !important;
     }
 }
 
@@ -125,7 +127,7 @@ h2{
 }
 
 #main .mainBackground{
-    height: calc(100vh - 76px);
+    height: calc(100vh - 66px);
     display: table-cell;
     width: 100vw;
     vertical-align: middle;
