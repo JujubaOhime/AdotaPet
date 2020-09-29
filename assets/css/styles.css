@@ -60,6 +60,11 @@ table {
     src: url(../webfonts/TitanOne-Regular.ttf);
 }
 
+@font-face{
+    font-family: Comfortaa;
+    src: url(../webfonts/Comfortaa-Medium.ttf);
+}
+
 h1{
     font-family: Chelsea !important;
 }
@@ -179,3 +184,28 @@ h2{
 
 /* IGNORE EVERYTHING BELOW */
 
+#sucessCase img{
+    height: 50vh;
+    border: 10px solid var(--primary);
+    box-shadow: 2px 2px 3px 0px black;
+    margin-bottom: 20px;
+    max-width: 90% !important;
+    filter: brightness(70%)
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -70px;
+  }
+  .footer,
+  .push {
+    height: 70px;
+    background: var(--primary);
+  }
