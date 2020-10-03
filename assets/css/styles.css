@@ -81,10 +81,20 @@ h2{
 .navbar{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    float: left;
     width: 100%;
-    box-shadow: 10px 5px 5px black
+    box-shadow: 10px 3px 10px #252525
 }
+
+
+.footer{
+    box-shadow: 10px -3px 10px #252525;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.navbarMain{
+    float: left;
+}
+
 .linkNavBar a{
     font-family: Chelsea;
     transition: 0.3s;
@@ -118,6 +128,10 @@ h2{
 
     #main .mainBackground{
         height: calc(100vh - 126px) !important;
+    }
+
+    .linkLogo{
+        width: 100%;
     }
 }
 
@@ -209,3 +223,20 @@ html, body {
     height: 70px;
     background: var(--primary);
   }
+
+  .push{
+      background: none;
+  }
+
+ .aboutBoard{
+      box-shadow: 5px 5px 15px #252525;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+
+ 
