@@ -282,3 +282,18 @@ html, body {
  #login label{
      font-family: Comfortaa;
  }
+
+
+ #feed form input:focus{
+     outline: none;
+ }
+
+ #feed form input{
+     border-radius: 25px;
+     color: var(--white);
+ }
+
+ #feed h3{
+     color: var(--blue);
+     font-family: Titan;
+ }
