@@ -14,8 +14,8 @@
   --yellow: #ffc107;
   --green: #28a745;
   --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
+  --cyan: #3CA9B8;
+  --white: #fafafa;
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #DB8187;
@@ -1843,27 +1843,27 @@ pre code {
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #6c757d;
+  color: var(--light);
   opacity: 1;
 }
 
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: var(--light);
   opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-  color: #6c757d;
+  color: var(--light);
   opacity: 1;
 }
 
 .form-control::-ms-input-placeholder {
-  color: #6c757d;
+  color: var(--light);
   opacity: 1;
 }
 
 .form-control::placeholder {
-  color: #6c757d;
+  color: var(--light);
   opacity: 1;
 }
 

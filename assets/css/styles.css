@@ -133,6 +133,10 @@ h2{
     .linkLogo{
         width: 100%;
     }
+
+    #login{
+        height: calc(100vh - 192px) !important;
+    }
 }
 
 #main{
@@ -216,11 +220,11 @@ html, body {
   
     /* Equal to height of footer */
     /* But also accounting for potential margin-bottom of last child */
-    margin-bottom: -70px;
+    margin-bottom: -66px;
   }
   .footer,
   .push {
-    height: 70px;
+    height: 66px;
     background: var(--primary);
   }
 
@@ -239,4 +243,42 @@ html, body {
   }
   
 
- 
+ #login{
+     height: calc(100vh - 132px);
+ }
+
+ #login input[type=email], input[type=password]{
+     background-color: var(--primary) !important;
+     color: var(--light);
+ }
+
+ #login input:focus{
+     color: var(--light);
+ }
+
+*::placeholder, #login:-ms-input-placeholder, #login ::-webkit-input-placeholder{
+     font-family: Comfortaa !important;
+ } 
+
+ #login button:hover{
+     transition: 0.3s;
+
+ }
+
+ #login button{
+     color: var(--light);
+     transition: 0.3s;
+     font-family: Titan;
+     border-radius: 35px !important;
+     letter-spacing: 4px !important;
+ }
+
+ #login a{
+     color: var(--cyan) !important;
+     text-decoration: none;
+     font-family: Comfortaa;
+ }
+
+ #login label{
+     font-family: Comfortaa;
+ }
