@@ -13,30 +13,41 @@
 
 <body>
     <div class="wrapper">
-    <nav class="navbar navbar-light bg-primary navbarMain">
-        <a href="index.html" class="d-none d-sm-block linkLogo"><img src="assets/images/logo.png" id="logoNav" class="img-responsive img-fluid d-none d-sm-block" alt="logo adotaPet"></a>
-        <a href="index.html" class="d-block d-sm-none linkLogo"><img src="assets/images/logoWithoutText.png" id="logoNav" class="img-responsive img-fluid d-block d-sm-none" alt="logo adotaPet"></a>
-        <ul class="nav linkNavBar">
-            <li class="nav-item">
-                <a class="nav-link text-white" href="feed.html">Adote aqui!</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="login.html">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="about.html">Sobre</a>
-            </li>
-        </ul>
-    </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark navbarMain bg-primary ">
+            <a href="index.html" class=" linkLogo"><img src="assets/images/logo.png" id="logoNav"
+                class="img-responsive img-fluid " alt="logo adotaPet"></a>
+            <button class="navbar-toggler justify-content-end mr-1" type="button" 
+            data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+              <ul class="nav linkNavBar mt-lg-0 justify-content-center">
+                <li class="nav-item active ">
+                  <a class="nav-link text-white" href="feed.html">Adote Aqui<span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="about.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="login.html">Login</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     <section id="main">
         <div class="mainBackground">
             <h1 class="text-center text-light align-middle align-content-center ml-1 mr-1">Adota Pet</h1>
-            <h2 class="text-center text-light align-middle ml-1 mr-1">Um lugar para conhecer seu bichinho </h2>
+            <h2 class="text-center text-light align-middle ml-1 mr-1 pb-4">Um lugar para conhecer seu bichinho </h2>
+            <button class="align-middle text-center mx-auto d-block" style="border-radius: 30px; text-decoration: none; border: none; 
+            padding: 5px 15px 5px 15px; color: var(--light); font-family: Chelsea; letter-spacing: 3px;
+            background-color: var(--primary); font-size: 3vh;">Adote aqui!</button>
         </div>
         <div id="icon-scroll" ></div>
+
     </section>
     <section id="intro" class="container">
-        <h2 class="text-center text-secondary mt-4">O que nos fazemos?</h2>
+        <h2 class="text-center text-secondary mt-5">O que nos fazemos?</h2>
         <p class="text-center pl-4 pr-4 pt-2 pb-2">Marzipan jelly marshmallow tart soufflé powder tootsie roll chupa chups pastry. 
             Cotton candy macaroon fruitcake fruitcake macaroon jelly gummi bears. Lollipop lemon 
             drops croissant lemon drops liquorice chocolate bar chocolate cake. Wafer icing tiramisu 
@@ -53,7 +64,7 @@
             <img src="assets/images/cat4.png" class="img-fluid mt-4 mb-2 mx-auto d-block" alt="A cat">
         </div>
     </section>
-    <section id="sucessCase" class="mb-4 ml-3 mr-3 mt-3">
+    <section id="sucessCase" class="mb-5 ml-3 mr-3 mt-3">
         <h2 class="text-center text-secondary mb-4">Casos de sucesso</h2>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             
