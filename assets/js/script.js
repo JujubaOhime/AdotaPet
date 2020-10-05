@@ -8,3 +8,11 @@ $(window).scroll(function() {
       $('#icon-scroll').fadeIn(500);
      }
  });
+
+ $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+
+  $('.popover-dismiss').popover({
+    trigger: 'focus'
+  })
