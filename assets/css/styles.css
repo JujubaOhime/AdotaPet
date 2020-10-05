@@ -248,11 +248,12 @@ h2{
 
 #sucessCase img{
     height: 50vh;
-    border: 10px solid var(--primary);
-    box-shadow: 2px 2px 3px 0px black;
+    border: 10px solid var(--blue);
+    box-shadow: 2px 2px 3px 0px #252525;
     margin-bottom: 20px;
     max-width: 90% !important;
-    filter: brightness(70%)
+    filter: brightness(70%);
+    border-radius: 25px !important; 
 }
 
 html, body {
@@ -291,9 +292,38 @@ html, body {
      height: calc(100vh - 132px);
  }
 
- #login input[type=email], input[type=password]{
+ #login input[type=email], #login input[type=password], #login input[type=text], #login textarea{
      background-color: var(--primary) !important;
      color: var(--light);
+ }
+
+ #talkToUs input, #talkToUs textarea{
+     color: var(--black);
+     box-shadow: none;
+     border: 3px solid var(--blue);
+     
+ }
+
+ #talkToUs textarea{
+     min-height: 86px;
+     max-height: 200px;
+     overflow: auto;
+     webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+ }
+
+ #talkToUs button{
+    color: var(--light);
+    transition: 0.3s;
+    font-family: Titan;
+    border-radius: 35px !important;
+    letter-spacing: 1px !important;
+    background-color: var(--primary);
+ }
+
+ #talkToUs label{
+     color: var(--primary) !important
  }
 
  #login input:focus{
@@ -312,7 +342,7 @@ html, body {
  #login button{
      color: var(--light);
      transition: 0.3s;
-     font-family: Titan;
+     font-family: Comfortaa;
      border-radius: 35px !important;
      letter-spacing: 4px !important;
  }
@@ -325,6 +355,7 @@ html, body {
 
  #login label{
      font-family: Comfortaa;
+     color: var(--blue) !important;
  }
 
 
@@ -354,8 +385,17 @@ html, body {
  }
 
 .mainBackground button:hover{
-     color: var(--primary) !important;
+     color: var(--blue) !important;
      transition: 0.3s;
      background-color: var(--light) !important;
 
+ }
+
+ #intro img{
+     border: 8px solid var(--blue);
+     border-radius: 25px;
+ }
+
+ #feed input{
+     background-color: var(--blue) !important;
  }
