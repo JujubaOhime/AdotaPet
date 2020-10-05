@@ -130,6 +130,10 @@ h2{
         height: calc(100vh - 192px) !important;
     }
 
+    .navbar-collapse{
+        
+    }
+
 }
 
 @media only screen and (max-width: 460px){
