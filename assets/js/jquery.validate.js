@@ -378,7 +378,7 @@ $.extend( $.validator, {
 		number: "Please enter a valid number.",
 		digits: "Por favor escreva somente dígitos",
 		equalTo: "Por favor, coloque o mesmo valor novamente",
-		maxlength: $.validator.format( "Please enter no more than {0} characters." ),
+		maxlength: $.validator.format( "Por favor, não coloque mais que {0} caracteres" ),
 		minlength: $.validator.format( "Por favor coloque pelo menos {0} caracteres." ),
 		rangelength: $.validator.format( "Please enter a value between {0} and {1} characters long." ),
 		range: $.validator.format( "Please enter a value between {0} and {1}." ),

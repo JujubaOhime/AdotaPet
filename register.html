@@ -55,27 +55,27 @@
                 <h2 class="text-secondary text-center mx-auto d-block w-100 text-uppercase pb-2">Cadastro</h2>
 
                 <div class="form-group">
-                    <label for="inputEmail" class="font-weight-bold text-secondary">E-mail</label>
+                    <label for="inputEmail" class="font-weight-bold text-secondary">E-mail *</label>
                     <input type="email" name="inputEmail" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Escreva o email" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="inputName" class="font-weight-bold text-secondary">Nome</label>
-                    <input type="text" class="form-control" name="inputName" id="inputName" aria-describedby="emailHelp" placeholder="Escreva o nome" required>
+                    <label for="inputName" class="font-weight-bold text-secondary">Nome *</label>
+                    <input type="text" class="form-control" name="inputName" id="inputName" aria-describedby="emailHelp" placeholder="Escreva o nome" required minlength="3">
                 </div>
 
                 <div class="form-group">
-                    <label for="inputPassword" class="font-weight-bold text-secondary" >Senha</label>
+                    <label for="inputPassword" class="font-weight-bold text-secondary" >Senha *</label>
                     <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="******" required minlength="8">
                 </div>
 
                 <div class="form-group">
-                    <label for="inputConfirmPassword" class="font-weight-bold text-secondary">Confirmação de Senha</label>
+                    <label for="inputConfirmPassword" class="font-weight-bold text-secondary">Confirmação de Senha *</label>
                     <input type="password" class="form-control" name="inputConfirmPassword" id="inputConfirmPassword" name="password_confirm" placeholder="******">
                 </div>
 
                 <div class="form-group">
-                    <label for="inputInstagram" class="font-weight-bold text-secondary">Gênero</label>
+                    <label for="inputInstagram" class="font-weight-bold text-secondary">Gênero *</label>
                     <select class="custom-select" id="selectGender" name="selectGender" class="required">
                         <option value="female">Feminino</option>
                         <option value="male">Masculino</option>
@@ -85,23 +85,43 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="inputCpf" class="font-weight-bold text-secondary">Cpf</label>
+                    <label for="inputCpf" class="font-weight-bold text-secondary">Cpf *</label>
                     <input type="text" class="form-control" id="inputCpf" name="inputCpf" class="inputCpf" name="cpf" placeholder="___-___-___-__" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="inputRG" class="font-weight-bold text-secondary">RG</label>
+                    <label for="inputRG" class="font-weight-bold text-secondary">RG *</label>
                     <input type="text" class="form-control" id="inputRG" name="inputRG" placeholder="__.___.___-_" name="rg" required >
                 </div>
 
                 <div class="form-group">
-                    <label for="inputDate" class="font-weight-bold text-secondary">Data de nascimento</label>
+                    <label for="inputDate" class="font-weight-bold text-secondary">Data de nascimento *</label>
                     <input type="date" class="form-control" id="inputDate" name="inputDate" required maxlength="10" minlength="10">
                 </div>
 
                 <div class="form-group">
-                    <label for="inputTel" class="font-weight-bold text-secondary">Número para contato</label>
+                    <label for="inputTel" class="font-weight-bold text-secondary">Número para contato *</label>
                     <input type="tel" class="form-control" id="inputTel" name="inputTel" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputCep" class="font-weight-bold text-secondary">CEP *</label>
+                    <input type="text" class="form-control" id="inputCep" name="inputCep" required minlength="9">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputDistrict" class="font-weight-bold text-secondary">Bairro *</label>
+                    <input type="text" class="form-control" id="inputDistrict" name="inputDistrict" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputCity" class="font-weight-bold text-secondary">Cidade *</label>
+                    <input type="text" class="form-control" id="inputCity" name="inputCity" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputUF" class="font-weight-bold text-secondary">Estado *</label>
+                    <input type="text" class="form-control" id="inputUF" name="inputUF" required>
                 </div>
 
                 <div class="form-group">
@@ -123,7 +143,19 @@
                     <label for="formControlTextarea" class="font-weight-bold text-secondary">Descrição</label>
                     <textarea class="form-control" id="formControlTextarea" rows="3" style="max-height: 200px; min-height: 100px;"></textarea>
                 </div>
-                
+
+                <label>* este campo é obrigatório</label>
+
+                <div class="form-check mb-3 mt-3 p-0 mx-auto">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Aceito os termos e condições:
+                      </label>
+                    <input class="form-check-input float-right ml-2" type="checkbox" value="accepted" name="checkbox" id="defaultCheck1" required>
+                    
+                   
+                    
+                </div>
+
                 <button type="submit" class="btn rounded mt-2 text-center d-block mx-auto pl-4 pr-4 pt-1 pb-1 text-white">Enviar</button>
 
 

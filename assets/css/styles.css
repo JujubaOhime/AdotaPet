@@ -424,3 +424,7 @@ html, body {
  #feed input{
      background-color: var(--blue) !important;
  }
+
+ #checkbox-error{
+     display: block
+ }
