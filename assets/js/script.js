@@ -16,3 +16,25 @@ $(window).scroll(function() {
   $('.popover-dismiss').popover({
     trigger: 'focus'
   })
+
+
+$('document').ready(function(){
+    $('#inputCpf').mask('000.000.000-00');
+    $('#inputRG').mask("99.999.999-9");
+    $("#inputTel").mask("(00) 0000-00009")
+
+    $("#formRegister").validate({
+      rules: {  
+        inputConfirmPassword : {
+					equalTo : "#inputPassword"
+        },
+        inputCpf :{
+          minlength : '14'
+        },
+        inputRg :{
+          minlength : '12'
+        }
+        
+      }
+    });
+});

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+   <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link href="assets/css/all.css" rel="stylesheet">
+   <link href="assets/css/styles.css" rel="stylesheet">
+   <link href="assets/css/custom.css" rel="stylesheet">
+   <title>Bootstrap</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+            <a href="index.html" class=" linkLogo"><img src="assets/images/logo.png" id="logoNav"
+                class="img-responsive img-fluid " alt="logo adotaPet"></a>
+            <button class="navbar-toggler justify-content-end mr-1" type="button" 
+            data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+              <ul class="nav linkNavBar mt-lg-0 justify-content-center">
+
+
+
+                <li class="nav-item active ">
+                  <a class="nav-link text-white" href="feed.html">Adote Aqui<span class="sr-only">(Página atual)</span></a>
+                </li>
+
+                <div class="btn-group">
+                  <a href="login.html"><button type="button" class="btn text-white">Login</button></a>
+                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="register.html">Cadastro</a>
+                  </div>
+                </div>
+
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="about.html">Sobre</a>
+                </li>
+                
+              </ul>
+            </div>
+          </nav>
+        
+        <section id="login" class="register d-flex container w-100 justify-content-center align-items-center">
+           
+            
+            <form class='align-items-center pt-5 pb-5' style="width: 600px;" id="formRegister">
+                <h2 class="text-secondary text-center mx-auto d-block w-100 text-uppercase pb-2">Cadastro</h2>
+
+                <div class="form-group">
+                    <label for="inputEmail" class="font-weight-bold text-secondary">E-mail</label>
+                    <input type="email" name="inputEmail" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Escreva o email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputName" class="font-weight-bold text-secondary">Nome</label>
+                    <input type="text" class="form-control" name="inputName" id="inputName" aria-describedby="emailHelp" placeholder="Escreva o nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword" class="font-weight-bold text-secondary" >Senha</label>
+                    <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="******" required minlength="8">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputConfirmPassword" class="font-weight-bold text-secondary">Confirmação de Senha</label>
+                    <input type="password" class="form-control" name="inputConfirmPassword" id="inputConfirmPassword" name="password_confirm" placeholder="******">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputInstagram" class="font-weight-bold text-secondary">Gênero</label>
+                    <select class="custom-select" id="selectGender" name="selectGender" class="required">
+                        <option value="female">Feminino</option>
+                        <option value="male">Masculino</option>
+                        <option value="non-binary">Não Binário</option>
+                        <option value="other">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputCpf" class="font-weight-bold text-secondary">Cpf</label>
+                    <input type="text" class="form-control" id="inputCpf" name="inputCpf" class="inputCpf" name="cpf" placeholder="___-___-___-__" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputRG" class="font-weight-bold text-secondary">RG</label>
+                    <input type="text" class="form-control" id="inputRG" name="inputRG" placeholder="__.___.___-_" name="rg" required >
+                </div>
+
+                <div class="form-group">
+                    <label for="inputDate" class="font-weight-bold text-secondary">Data de nascimento</label>
+                    <input type="date" class="form-control" id="inputDate" name="inputDate" required maxlength="10" minlength="10">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputTel" class="font-weight-bold text-secondary">Número para contato</label>
+                    <input type="tel" class="form-control" id="inputTel" name="inputTel" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPhoto" class="font-weight-bold text-secondary">Link Foto</label>
+                    <input type="url" class="form-control" id="inputPhoto" name="inputPhoto" placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputInstagram" class="font-weight-bold text-secondary">Link Instagram</label>
+                    <input type="url" class="form-control" id="inputInstagram" name="inputInstagram" placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputFacebook" class="font-weight-bold text-secondary">Link Facebook</label>
+                    <input type="url" class="form-control" id="inputFacebook" name="inputFacebook" placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label for="formControlTextarea" class="font-weight-bold text-secondary">Descrição</label>
+                    <textarea class="form-control" id="formControlTextarea" rows="3" style="max-height: 200px; min-height: 100px;"></textarea>
+                </div>
+                
+                <button type="submit" class="btn rounded mt-2 text-center d-block mx-auto pl-4 pr-4 pt-1 pb-1 text-white">Enviar</button>
+
+
+            </form>
+
+
+        </section>
+        <div class="push"></div>
+    </div>
+    <footer class="footer d-flex align-items-center">
+      <div class="ml-4 d-inline-flex">
+        <a href="https://www.facebook.com/jujubaohime"><img src="assets/images/iconFacebook.svg", style="height: 45px; width: 45px;" alt="Facebook Icon"></a>
+        <a href="https://www.instagram.com/jujubaohime/"><img src="assets/images/iconInstagram.svg", class="ml-3" style="height: 45px; width: 45px;" alt="Instagram Icon"></a>
+      </div>
+      <h1 class="m-0 text-light h5 mr-3 ml-2 text-right w-100" style="font-size: 15px;">Desenvolvido por Amélia Guerreiro</h1>
+    </footer>
+  
+
+   <script src="assets/js/jquery.js"></script>
+   <script src="assets/js/popper.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/jquery.mask.js"></script>
+   <script src="assets/js/jquery.validate.js"></script>
+   <script src="assets/js/script.js"></script>
+   
+</body>
+</html>

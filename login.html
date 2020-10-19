@@ -23,15 +23,27 @@
           
             <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
               <ul class="nav linkNavBar mt-lg-0 justify-content-center">
+
+
+
                 <li class="nav-item active ">
                   <a class="nav-link text-white" href="feed.html">Adote Aqui<span class="sr-only">(Página atual)</span></a>
                 </li>
+
+                <div class="btn-group">
+                  <a href="login.html"><button type="button" class="btn text-white">Login</button></a>
+                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="register.html">Cadastro</a>
+                  </div>
+                </div>
+
                 <li class="nav-item">
                   <a class="nav-link text-white" href="about.html">Sobre</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="login.html">Login</a>
-                </li>
+                
               </ul>
             </div>
           </nav>
@@ -41,10 +53,12 @@
             <form class='align-items-center container' style="width: 310px;">
 
                     <h2 class="text-secondary pt-3 text-center text-uppercase pb-2">Login</h2>
+
                     <div class="form-group">
                         <label for="inputEmail" class="font-weight-bold text-secondary">E-mail</label>
                         <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Escreva o email">
                     </div>
+                    
                     <div class="form-group">
                         <label for="inputPassword" class="font-weight-bold text-secondary" >Senha</label>
                         <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
@@ -60,7 +74,7 @@
                     data-content="Já já com backend vamos colocar, tá bom? <3">Login</button>
                     <div class="mt-2 d-block text-center">
                         <a class="text-center d-block" href="#">Esqueci minha senha</a>
-                        <a href="#">Cadastre-se</a>
+                        <a href="register.html">Cadastre-se</a>
                     </div>
                    
             </form>

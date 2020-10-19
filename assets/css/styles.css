@@ -106,6 +106,23 @@ h2{
     color: var(--primary) !important;
 }
 
+.linkNavBar button:hover{
+    background-color: var(--light);
+    transition: 0.3s;
+    color: var(--primary) !important;
+    border-radius: 25px;
+}
+
+.linkNavBar button{
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.register{
+    height: unset !important;
+}
+
+
 @media only screen and (max-width: 372px){
     
     .linkNavBar{
@@ -127,7 +144,11 @@ h2{
 
 
     #login{
-        height: calc(100vh - 192px) !important;
+        height: calc(100vh - 192px);
+    }
+
+    .register{
+        height: unset !important
     }
 
     .navbar-collapse{
@@ -157,6 +178,10 @@ h2{
     display: table-cell;
     width: 100vw;
     vertical-align: middle;
+}
+
+#register{
+    height: calc(100vh - 132px) !important
 }
 
 #main h1{
@@ -292,9 +317,9 @@ html, body {
      height: calc(100vh - 132px);
  }
 
- #login input[type=email], #login input[type=password], #login input[type=text], #login textarea{
+ #login input[type=email], #login input[type=password], #login input[type=text], #login textarea, #login input, select, option{
      background-color: var(--primary) !important;
-     color: var(--light);
+     color: var(--light) !important;
  }
 
  #talkToUs input, #talkToUs textarea{
@@ -313,7 +338,7 @@ html, body {
 
  }
 
- #talkToUs button{
+ #talkToUs button, #login button{
     color: var(--light);
     transition: 0.3s;
     font-family: Titan;
