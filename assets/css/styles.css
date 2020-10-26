@@ -281,6 +281,14 @@ h2{
     border-radius: 25px !important; 
 }
 
+.link-like, .link-dislike{
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: var(--primary);
+    padding: 0px;
+}
+
 html, body {
     height: 100%;
     margin: 0;

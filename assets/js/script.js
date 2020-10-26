@@ -44,6 +44,8 @@ $('document').ready(function(){
         },
 
       }
+
+      
     });
 
   function limpa_formulário_cep() {
@@ -82,4 +84,68 @@ $('document').ready(function(){
       limpa_formulário_cep();
     }
   });
+
+
+  $(".link-like .far.fa-thumbs-up").click(function(){
+    let like = $(this).closest('button').find('span').data("like")
+    let like_text = $(this).closest('button').find('span').text()
+    let dislike = $(this).closest('div').find($(".link-dislike .dislike")).data("dislike")
+    let dislike_text = $(this).closest('div').find($(".link-dislike .dislike")).text()
+    
+
+    if(like == like_text){ //se não foi apertado o like:
+      $(this).closest('button').find('span').text(like + 1)
+      $(this).removeClass("far")
+      $(this).addClass("fas")
+
+      if(dislike_text != dislike){
+        $(this).closest('div').find($(".link-dislike .fa-thumbs-down")).removeClass("fas")
+        $(this).closest('div').find($(".link-dislike .fa-thumbs-down")).addClass("far")
+        $(this).closest('div').find($(".link-dislike .dislike")).text(dislike)
+      }
+
+    }
+    else if(like  != like_text){ //se já foi apertado o like:
+      $(this).closest('button').find('span').text(like)
+      $(this).removeClass("fas")
+      $(this).addClass("far")
+
+    }
+
+  })
+
+  $(".link-dislike .far.fa-thumbs-down").click(function(){
+    let dislike = $(this).closest('button').find('span').data("dislike")
+    let dislike_text = $(this).closest('button').find('span').text()
+    let like = $(this).closest('div').find($(".link-like .like")).data("like")
+    let like_text = $(this).closest('div').find($(".link-like .like")).text()
+    
+
+    if(dislike == dislike_text){ //se não foi apertado o dislike:
+      $(this).closest('button').find('span').text(dislike + 1)
+      $(this).removeClass("far")
+      $(this).addClass("fas")
+
+      if (like_text != like){
+        $(this).closest('div').find($(".link-like .fa-thumbs-up")).removeClass("fas")
+        $(this).closest('div').find($(".link-like .fa-thumbs-up")).addClass("far")
+        $(this).closest('div').find($(".link-like .like")).text(like)
+      }
+
+    }
+    else if(dislike  != dislike_text){ // se foi apertado o dislike
+      $(this).closest('button').find('span').text(dislike)
+      $(this).removeClass("fas")
+      $(this).addClass("far")
+    }
+
+  })
+
+
+
+  
+
+
+
+
 });
